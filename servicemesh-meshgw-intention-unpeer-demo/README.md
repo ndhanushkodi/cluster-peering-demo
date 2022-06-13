@@ -9,7 +9,8 @@ intentions and un-peering.
    and `peer2-consul-values.yml` on the second cluster. Use the Helm chart from the
    [peering branch](https://github.com/hashicorp/consul-k8s/tree/peering) of
    consul-k8s (This will be
-   merged into main and released soon).
+   merged into main and released soon). The images being used are currently built off of
+   `main` for hashicorp/consul and `peering` for hashicorp/consul-k8s.
 3. Apply acceptor.yml to the first cluster:
 ```
 k apply -f acceptor.yml
@@ -41,7 +42,7 @@ curl "localhost:8500/v1/health/connect/backend?peer=api&pretty"
 k apply -f frontend.yml
 ```
 10. Exec onto frontend, and try to reach backend. The local listener for the
-    upstream is `localhost:1234`:
+    upstream is `localhost:1234`, it should return successfully:
 ```
 curl localhost:1234
 ```
