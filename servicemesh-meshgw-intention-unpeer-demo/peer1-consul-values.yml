@@ -1,8 +1,8 @@
 global:
   domain: consul
   datacenter: dc1
-  imageK8S: ndhanushkodi/consul-k8s-dev:peering36
-  image: ndhanushkodi/consul-dev:peering10
+  imageK8S: ndhanushkodi/consul-k8s-dev:peering37
+  image: ndhanushkodi/consul-dev:peering11
   # image: ndhanushkodi/consul-dev:entpeering4
   # enterpriseLicense:
   #   secretName: license
