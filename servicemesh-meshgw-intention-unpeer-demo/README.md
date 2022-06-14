@@ -26,7 +26,7 @@ k apply -f api-token.yml
 ```
 6. Apply the dialer resource, backend application, and exported service CR:
 ```
-k apply -f dialer.yml; k apply -f backend.yml; k apply -f exported-svc.yml
+k apply -f dialer.yml; k apply -f backend.yml; k apply -f exported-svc.yml; k apply -f intention.yml;
 ```
 7. Go back to the first cluster and confirm that the peering connection is up by
    checking if the endpoints of backend deployed in peer api show up on the
@@ -44,3 +44,14 @@ k apply -f frontend.yml
 ```
 curl localhost:1234
 ```
+10. [Optional: Intentions] If you edit the intention to remove the last 2 lines that allow the
+    "frontend" service, you should see the same request in step 9 fail.
+11. [Optional: Deleting endpoints and Unpeering] If you delete the exported service, you should see
+    that the endpoints for backend no longer show up if you run the command in
+    step 7.
+
+
+    **This next part does not yet work but will after the last deletion PR is merged"
+    Similarly, if you delete the peering resource (PeeringAcceptor and
+    PeeringDialer) in both clusters, you
+    should also see the command in step 7 return an empty set of instances.
