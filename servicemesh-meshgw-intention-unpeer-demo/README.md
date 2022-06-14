@@ -26,7 +26,7 @@ k apply -f api-token.yml
 ```
 6. Apply the dialer resource, backend application, and exported service CR:
 ```
-k apply -f dialer.yml; k apply -f backend.yml; k apply -f exported-svc.yml; k apply -f intention.yml;
+k apply -f dialer.yml; k apply -f backend.yml; k apply -f exportedsvc.yml; k apply -f intention.yml;
 ```
 7. Go back to the first cluster and confirm that the peering connection is up by
    checking if the endpoints of backend deployed in peer api show up on the
