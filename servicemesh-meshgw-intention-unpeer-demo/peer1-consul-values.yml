@@ -7,6 +7,8 @@ global:
   # enterpriseLicense:
   #   secretName: license
   #   secretKey: key
+  peering:
+    enabled: true
 server:
   replicas: 1
   bootstrapExpect: 1
