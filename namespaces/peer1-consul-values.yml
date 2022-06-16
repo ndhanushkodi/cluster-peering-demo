@@ -1,0 +1,40 @@
+global:
+  domain: consul
+  datacenter: dc1
+  imageK8S: ndhanushkodi/consul-k8s-dev:peering40
+  # image: ndhanushkodi/consul-dev:peering12
+  image: hashicorp/consul-enterprise:1.13.0-alpha1-ent
+  enterpriseLicense:
+    secretName: license
+    secretKey: key
+  peering:
+    enabled: true
+  enableConsulNamespaces: true
+server:
+  replicas: 1
+  bootstrapExpect: 1
+  extraConfig: |
+    {
+      "log_level": "TRACE"
+    }
+
+client:
+  enabled: true
+  grpc: true
+  extraConfig: |
+    {
+      "log_level": "TRACE"
+    }
+
+ui:
+  enabled: true
+
+connectInject:
+  enabled: true
+
+controller:
+  enabled: true
+
+meshGateway:
+  enabled: true
+  replicas: 1
