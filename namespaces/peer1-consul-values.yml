@@ -10,6 +10,7 @@ global:
   peering:
     enabled: true
   enableConsulNamespaces: true
+  # enablePodSecurityPolicies: true
 server:
   replicas: 1
   bootstrapExpect: 1
