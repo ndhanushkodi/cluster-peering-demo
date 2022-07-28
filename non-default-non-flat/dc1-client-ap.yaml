@@ -1,0 +1,60 @@
+global:
+  enabled: false
+  domain: consul
+  datacenter: dc1
+  imageK8S: ndhanushkodi/consul-k8s-dev:nondefaultap1
+  # image: hashicorp/consul:1.13.0-alpha2
+  image: ndhanushkodi/consul-dev@sha256:61b02ac369cc13db6b9af8808b7e3a811bcdc9a09c95ddac0da931f81743091c
+  enterpriseLicense:
+    secretName: license
+    secretKey: key
+  peering:
+    enabled: true
+  adminPartitions:
+    enabled: true
+    name: gkepart2
+  enableConsulNamespaces: true
+  tls:
+    enabled: true
+    caCert:
+      secretName: nitya-consul-ca-cert
+      secretKey: "tls.crt"
+    caKey:
+      secretName: nitya-consul-ca-key
+      secretKey: "tls.key"
+dns:
+  enabled: true
+server:
+  enabled: false
+  # service:
+  #   type: LoadBalancer
+externalServers:
+  enabled: true
+  hosts: ["35.226.108.175"]
+  tlsServerName: "server.dc1.consul"
+
+client:
+  join: ["35.226.108.175"]
+  exposeGossipPorts: true
+  enabled: true
+  grpc: true
+  extraConfig: |
+    {
+      "log_level": "TRACE"
+    }
+
+ui:
+  enabled: true
+
+connectInject:
+  enabled: true
+
+controller:
+  enabled: true
+
+meshGateway:
+  enabled: true
+  replicas: 1
+  # service:
+  #   type: NodePort
+  #   nodePort: 30100

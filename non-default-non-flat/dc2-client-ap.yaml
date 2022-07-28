@@ -1,0 +1,59 @@
+global:
+  enabled: false
+  domain: consul
+  datacenter: dc2
+  imageK8S: ndhanushkodi/consul-k8s-dev:nondefaultap1
+  # image: ndhanushkodi/consul-dev:peering12
+  image: ndhanushkodi/consul-dev@sha256:61b02ac369cc13db6b9af8808b7e3a811bcdc9a09c95ddac0da931f81743091c
+  enterpriseLicense:
+    secretName: license
+    secretKey: key
+  peering:
+    enabled: true
+  adminPartitions:
+    enabled: true
+    name: ekspart2
+  enableConsulNamespaces: true
+  tls:
+    enabled: true
+    caCert:
+      secretName: nitya-consul-ca-cert
+      secretKey: "tls.crt"
+    caKey:
+      secretName: nitya-consul-ca-key
+      secretKey: "tls.key"
+dns:
+  enabled: true
+server:
+  enabled: false
+
+externalServers:
+  enabled: true
+  hosts: ["a750a37722d234987be45f9885fb1abe-2073811181.us-west-2.elb.amazonaws.com"]
+  tlsServerName: "server.dc2.consul"
+
+client:
+  join: ["a750a37722d234987be45f9885fb1abe-2073811181.us-west-2.elb.amazonaws.com"]
+  exposeGossipPorts: true
+  enabled: true
+  grpc: true
+  extraConfig: |
+    {
+      "log_level": "TRACE"
+    }
+
+ui:
+  enabled: true
+
+connectInject:
+  enabled: true
+
+controller:
+  enabled: true
+
+meshGateway:
+  enabled: true
+  replicas: 1
+  # service:
+  #   type: NodePort
+  #   nodePort: 30100
