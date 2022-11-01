@@ -51,13 +51,13 @@ spec:
           value: "backend"
         - name: "MESSAGE"
           value: "Response from backend"
-# ---
-# apiVersion: consul.hashicorp.com/v1alpha1
-# kind: ServiceDefaults
-# metadata:
-#   name: backend
-# spec:
-#   protocol: "http"
+---
+apiVersion: consul.hashicorp.com/v1alpha1
+kind: ServiceDefaults
+metadata:
+  name: backend
+spec:
+  protocol: "http"
 # ---
 # apiVersion: consul.hashicorp.com/v1alpha1
 # kind: ServiceIntentions
