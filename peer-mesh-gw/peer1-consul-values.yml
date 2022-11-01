@@ -1,0 +1,31 @@
+global:
+  tls:
+    enabled: true
+  domain: consul
+  datacenter: dc1
+  peering:
+    enabled: true
+  imageK8S: "ndhanushkodi/consul-k8s-dev:oct31v2"
+  image: "hashicorppreview/consul:1.14-dev"
+  acls:
+    manageSystemACLs: true
+server:
+  replicas: 3
+  bootstrapExpect: 3
+  extraConfig: |
+    {
+      "log_level": "TRACE"
+    }
+
+ui:
+  enabled: true
+
+connectInject:
+  enabled: true
+
+controller:
+  enabled: true
+
+meshGateway:
+  enabled: true
+  replicas: 1
