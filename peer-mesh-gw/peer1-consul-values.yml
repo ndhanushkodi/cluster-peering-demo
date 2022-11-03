@@ -5,10 +5,8 @@ global:
   datacenter: dc1
   peering:
     enabled: true
-  imageK8S: "ndhanushkodi/consul-k8s-dev:oct31v3"
+  imageK8S: "ndhanushkodi/consul-k8s-dev:latestnov3"
   image: "hashicorppreview/consul:1.14-dev"
-  acls:
-    manageSystemACLs: true
 server:
   replicas: 3
   bootstrapExpect: 3
