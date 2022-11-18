@@ -1,0 +1,13 @@
+apiVersion: v1
+data:
+  tls.key: LS0tLS1CRUdJTiBFQyBQUklWQVRFIEtFWS0tLS0tCk1IY0NBUUVFSU5La0xhdER6QXE5MWVhVHpFblhDaEJPelFEM2Y0SkxHV2pvYXdYekNQRVJvQW9HQ0NxR1NNNDkKQXdFSG9VUURRZ0FFTklibnpXaG4vdjVIMlJCV2ZpYVVuZkd0KzhVaDNGOENwOUI5T0JlUmU3cEEvU2N6b2dxcwpxcUpnNXhOS1dFaWtERGRvU2E3WERCTm1BV3BsNXZKTGd3PT0KLS0tLS1FTkQgRUMgUFJJVkFURSBLRVktLS0tLQo=
+kind: Secret
+metadata:
+  creationTimestamp: "2022-11-17T06:29:38Z"
+  labels:
+    managed-by: consul-k8s
+  name: eks1svr-consul-ca-key
+  namespace: default
+  resourceVersion: "3659313"
+  uid: 1d2b5c93-5d71-4ee3-af2d-5d314271bb2b
+type: Opaque

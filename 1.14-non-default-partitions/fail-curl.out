@@ -1,0 +1,357 @@
+execve("/usr/bin/curl", ["curl", "http://backend.virtual.default.n"...], 0x7ffef75dbd58 /* 69 vars */) = 0
+arch_prctl(ARCH_SET_FS, 0x7fbae5336b48) = 0
+set_tid_address(0x7fbae5336fb0)         = 102
+brk(NULL)                               = 0x55d39ef38000
+brk(0x55d39ef3a000)                     = 0x55d39ef3a000
+mmap(0x55d39ef38000, 4096, PROT_NONE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x55d39ef38000
+open("/etc/ld-musl-x86_64.path", O_RDONLY|O_LARGEFILE|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+open("/lib/libcurl.so.4", O_RDONLY|O_LARGEFILE|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/libcurl.so.4", O_RDONLY|O_LARGEFILE|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+open("/usr/lib/libcurl.so.4", O_RDONLY|O_LARGEFILE|O_CLOEXEC) = 3
+fcntl(3, F_SETFD, FD_CLOEXEC)           = 0
+fstat(3, {st_mode=S_IFREG|0755, st_size=505304, ...}) = 0
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0"..., 960) = 960
+mmap(NULL, 512000, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7fbae5223000
+mmap(0x7fbae5230000, 323584, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED, 3, 0xd000) = 0x7fbae5230000
+mmap(0x7fbae527f000, 106496, PROT_READ, MAP_PRIVATE|MAP_FIXED, 3, 0x5c000) = 0x7fbae527f000
+mmap(0x7fbae529a000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED, 3, 0x76000) = 0x7fbae529a000
+mmap(0x7fbae529f000, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7fbae529f000
+close(3)                                = 0
+open("/lib/libz.so.1", O_RDONLY|O_LARGEFILE|O_CLOEXEC) = 3
+fcntl(3, F_SETFD, FD_CLOEXEC)           = 0
+fstat(3, {st_mode=S_IFREG|0755, st_size=100248, ...}) = 0
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0"..., 960) = 960
+mmap(NULL, 106496, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7fbae5209000
+mmap(0x7fbae520c000, 57344, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED, 3, 0x3000) = 0x7fbae520c000
+mmap(0x7fbae521a000, 28672, PROT_READ, MAP_PRIVATE|MAP_FIXED, 3, 0x11000) = 0x7fbae521a000
+mmap(0x7fbae5221000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED, 3, 0x17000) = 0x7fbae5221000
+close(3)                                = 0
+open("/lib/libnghttp2.so.14", O_RDONLY|O_LARGEFILE|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/libnghttp2.so.14", O_RDONLY|O_LARGEFILE|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+open("/usr/lib/libnghttp2.so.14", O_RDONLY|O_LARGEFILE|O_CLOEXEC) = 3
+fcntl(3, F_SETFD, FD_CLOEXEC)           = 0
+fstat(3, {st_mode=S_IFREG|0755, st_size=145240, ...}) = 0
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0"..., 960) = 960
+mmap(NULL, 151552, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7fbae51e4000
+mmap(0x7fbae51e9000, 61440, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED, 3, 0x5000) = 0x7fbae51e9000
+mmap(0x7fbae51f8000, 53248, PROT_READ, MAP_PRIVATE|MAP_FIXED, 3, 0x14000) = 0x7fbae51f8000
+mmap(0x7fbae5205000, 16384, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED, 3, 0x20000) = 0x7fbae5205000
+close(3)                                = 0
+open("/lib/libssl.so.1.1", O_RDONLY|O_LARGEFILE|O_CLOEXEC) = 3
+fcntl(3, F_SETFD, FD_CLOEXEC)           = 0
+fstat(3, {st_mode=S_IFREG|0755, st_size=523704, ...}) = 0
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0"..., 960) = 960
+mmap(NULL, 528384, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7fbae5163000
+mmap(0x7fbae517f000, 262144, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED, 3, 0x1c000) = 0x7fbae517f000
+mmap(0x7fbae51bf000, 98304, PROT_READ, MAP_PRIVATE|MAP_FIXED, 3, 0x5c000) = 0x7fbae51bf000
+mmap(0x7fbae51d7000, 53248, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED, 3, 0x73000) = 0x7fbae51d7000
+close(3)                                = 0
+open("/lib/libcrypto.so.1.1", O_RDONLY|O_LARGEFILE|O_CLOEXEC) = 3
+fcntl(3, F_SETFD, FD_CLOEXEC)           = 0
+fstat(3, {st_mode=S_IFREG|0755, st_size=2609840, ...}) = 0
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0"..., 960) = 960
+mmap(NULL, 2629632, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7fbae4ee1000
+mmap(0x7fbae4f56000, 1404928, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED, 3, 0x75000) = 0x7fbae4f56000
+mmap(0x7fbae50ad000, 544768, PROT_READ, MAP_PRIVATE|MAP_FIXED, 3, 0x1cc000) = 0x7fbae50ad000
+mmap(0x7fbae5132000, 200704, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED, 3, 0x250000) = 0x7fbae5132000
+mmap(0x7fbae515f000, 16384, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7fbae515f000
+close(3)                                = 0
+open("/lib/libbrotlidec.so.1", O_RDONLY|O_LARGEFILE|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/libbrotlidec.so.1", O_RDONLY|O_LARGEFILE|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+open("/usr/lib/libbrotlidec.so.1", O_RDONLY|O_LARGEFILE|O_CLOEXEC) = 3
+fcntl(3, F_SETFD, FD_CLOEXEC)           = 0
+fstat(3, {st_mode=S_IFREG|0755, st_size=42672, ...}) = 0
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0"..., 960) = 960
+mmap(NULL, 49152, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7fbae4ed5000
+mmap(0x7fbae4ed6000, 24576, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED, 3, 0x1000) = 0x7fbae4ed6000
+mmap(0x7fbae4edc000, 12288, PROT_READ, MAP_PRIVATE|MAP_FIXED, 3, 0x7000) = 0x7fbae4edc000
+mmap(0x7fbae4edf000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED, 3, 0x9000) = 0x7fbae4edf000
+close(3)                                = 0
+open("/lib/libbrotlicommon.so.1", O_RDONLY|O_LARGEFILE|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/libbrotlicommon.so.1", O_RDONLY|O_LARGEFILE|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+open("/usr/lib/libbrotlicommon.so.1", O_RDONLY|O_LARGEFILE|O_CLOEXEC) = 3
+fcntl(3, F_SETFD, FD_CLOEXEC)           = 0
+fstat(3, {st_mode=S_IFREG|0755, st_size=136952, ...}) = 0
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0"..., 960) = 960
+mmap(NULL, 143360, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7fbae4eb2000
+mmap(0x7fbae4eb3000, 4096, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED, 3, 0x1000) = 0x7fbae4eb3000
+mmap(0x7fbae4eb4000, 126976, PROT_READ, MAP_PRIVATE|MAP_FIXED, 3, 0x2000) = 0x7fbae4eb4000
+mmap(0x7fbae4ed3000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED, 3, 0x20000) = 0x7fbae4ed3000
+close(3)                                = 0
+mprotect(0x7fbae529a000, 12288, PROT_READ) = 0
+mprotect(0x7fbae5221000, 4096, PROT_READ) = 0
+mprotect(0x7fbae5333000, 4096, PROT_READ) = 0
+mprotect(0x7fbae5205000, 12288, PROT_READ) = 0
+mprotect(0x7fbae51d7000, 36864, PROT_READ) = 0
+mprotect(0x7fbae5132000, 176128, PROT_READ) = 0
+mprotect(0x7fbae4edf000, 4096, PROT_READ) = 0
+mprotect(0x7fbae4ed3000, 4096, PROT_READ) = 0
+mprotect(0x55d39d248000, 20480, PROT_READ) = 0
+pipe([3, 4])                            = 0
+close(3)                                = 0
+close(4)                                = 0
+rt_sigaction(SIGPIPE, {sa_handler=SIG_IGN, sa_mask=[], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7fbae52e6c9f}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fbae4eb1000
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fbae4eb0000
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fbae4eaf000
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fbae4eae000
+mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fbae4eac000
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fbae4eab000
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fbae4eaa000
+mmap(NULL, 16384, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fbae4ea6000
+munmap(0x7fbae4eac000, 8192)            = 0
+brk(0x55d39ef3b000)                     = 0x55d39ef3b000
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fbae4ead000
+mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fbae4ea4000
+mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fbae4ea2000
+mmap(NULL, 28672, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fbae4e9b000
+munmap(0x7fbae4ea6000, 16384)           = 0
+mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fbae4ea8000
+mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fbae4ea6000
+mmap(NULL, 16384, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fbae4e97000
+mmap(NULL, 20480, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fbae4e92000
+madvise(0x7fbae4e9c000, 4096, MADV_FREE) = 0
+munmap(0x7fbae4e9b000, 28672)           = 0
+mmap(NULL, 16384, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fbae4e9e000
+getuid()                                = 0
+geteuid()                               = 0
+getgid()                                = 0
+getegid()                               = 0
+open("/etc/ssl/openssl.cnf", O_RDONLY|O_LARGEFILE) = 3
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fbae4eac000
+read(3, "#\n# OpenSSL example configuratio"..., 1024) = 1024
+read(3, "################################"..., 1024) = 1024
+read(3, "\t= ca_default\t\t# Subject Name op"..., 1024) = 1024
+read(3, "me, you must list all acceptable"..., 1024) = 1024
+read(3, "# WARNING: ancient versions of N"..., 1024) = 1024
+read(3, "butes ]\nchallengePassword\t\t= A c"..., 1024) = 1024
+read(3, "L Generated Certificate\"\n\n# PKIX"..., 1024) = 1024
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fbae4e9d000
+munmap(0x7fbae4e9d000, 4096)            = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fbae4e9d000
+read(3, "ver since it will\n# prevent it b"..., 1024) = 1024
+mmap(NULL, 16384, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fbae4e8e000
+read(3, "es of the usage of nsCertType. I"..., 1024) = 1024
+read(3, "issuer:copy\n\n#nsCaRevocationUrl\t"..., 1024) = 1024
+read(3, "onal)\nother_policies\t= tsa_polic"..., 1024) = 669
+read(3, "", 1024)                       = 0
+munmap(0x7fbae4eac000, 4096)            = 0
+close(3)                                = 0
+munmap(0x7fbae4e9d000, 4096)            = 0
+munmap(0x7fbae4e8e000, 16384)           = 0
+open("/root/.curlrc", O_RDONLY|O_LARGEFILE) = -1 ENOENT (No such file or directory)
+open("/root/.config/curlrc", O_RDONLY|O_LARGEFILE) = -1 ENOENT (No such file or directory)
+geteuid()                               = 0
+open("/etc/passwd", O_RDONLY|O_LARGEFILE|O_CLOEXEC) = 3
+fcntl(3, F_SETFD, FD_CLOEXEC)           = 0
+fcntl(3, F_SETFD, FD_CLOEXEC)           = 0
+read(3, "root:x:0:0:root:/root:/bin/ash\nb"..., 1024) = 1024
+lseek(3, -993, SEEK_CUR)                = 31
+close(3)                                = 0
+open("/root/.curlrc", O_RDONLY|O_LARGEFILE) = -1 ENOENT (No such file or directory)
+mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fbae4e9c000
+mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fbae4e90000
+mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fbae4e8e000
+rt_sigaction(SIGPIPE, NULL, {sa_handler=SIG_IGN, sa_mask=[], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7fbae52e6c9f}, 8) = 0
+rt_sigaction(SIGPIPE, {sa_handler=SIG_IGN, sa_mask=[], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7fbae52e6c9f}, NULL, 8) = 0
+munmap(0x7fbae4e8e000, 8192)            = 0
+rt_sigaction(SIGPIPE, {sa_handler=SIG_IGN, sa_mask=[], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7fbae52e6c9f}, NULL, 8) = 0
+mmap(NULL, 16384, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fbae4e8c000
+mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fbae4e8a000
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fbae4eac000
+ioctl(1, TIOCGWINSZ, {ws_row=17, ws_col=202, ws_xpixel=0, ws_ypixel=0}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fbae4e9b000
+munmap(0x7fbae4e9b000, 4096)            = 0
+ioctl(0, TIOCGWINSZ, {ws_row=17, ws_col=202, ws_xpixel=0, ws_ypixel=0}) = 0
+clock_gettime(CLOCK_MONOTONIC, {tv_sec=433617, tv_nsec=338940653}) = 0
+munmap(0x7fbae4e8c000, 16384)           = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fbae4e9b000
+mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fbae4e8e000
+socket(AF_INET6, SOCK_DGRAM, IPPROTO_IP) = 3
+close(3)                                = 0
+socketpair(AF_UNIX, SOCK_STREAM, 0, [3, 4]) = 0
+fcntl(3, F_GETFL)                       = 0x2 (flags O_RDWR)
+fcntl(3, F_SETFL, O_RDWR|O_NONBLOCK|O_LARGEFILE) = 0
+fcntl(4, F_GETFL)                       = 0x2 (flags O_RDWR)
+fcntl(4, F_SETFL, O_RDWR|O_NONBLOCK|O_LARGEFILE) = 0
+clock_gettime(CLOCK_MONOTONIC, {tv_sec=433617, tv_nsec=339735191}) = 0
+rt_sigaction(SIGPIPE, NULL, {sa_handler=SIG_IGN, sa_mask=[], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7fbae52e6c9f}, 8) = 0
+rt_sigaction(SIGPIPE, {sa_handler=SIG_IGN, sa_mask=[], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7fbae52e6c9f}, NULL, 8) = 0
+clock_gettime(CLOCK_MONOTONIC, {tv_sec=433617, tv_nsec=339934603}) = 0
+poll([{fd=3, events=POLLIN}], 1, 0)     = 0 (Timeout)
+clock_gettime(CLOCK_MONOTONIC, {tv_sec=433617, tv_nsec=340067648}) = 0
+rt_sigaction(SIGPIPE, NULL, {sa_handler=SIG_IGN, sa_mask=[], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7fbae52e6c9f}, 8) = 0
+rt_sigaction(SIGPIPE, {sa_handler=SIG_IGN, sa_mask=[], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7fbae52e6c9f}, NULL, 8) = 0
+clock_gettime(CLOCK_MONOTONIC, {tv_sec=433617, tv_nsec=340264297}) = 0
+clock_gettime(CLOCK_MONOTONIC, {tv_sec=433617, tv_nsec=340333020}) = 0
+mmap(NULL, 106496, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fbae4e70000
+clock_gettime(CLOCK_MONOTONIC, {tv_sec=433617, tv_nsec=340473307}) = 0
+clock_gettime(CLOCK_MONOTONIC, {tv_sec=433617, tv_nsec=340539464}) = 0
+clock_gettime(CLOCK_MONOTONIC, {tv_sec=433617, tv_nsec=340602689}) = 0
+clock_gettime(CLOCK_MONOTONIC, {tv_sec=433617, tv_nsec=340665890}) = 0
+clock_gettime(CLOCK_MONOTONIC, {tv_sec=433617, tv_nsec=340749616}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fbae4e8d000
+clock_gettime(CLOCK_MONOTONIC, {tv_sec=433617, tv_nsec=340894429}) = 0
+clock_gettime(CLOCK_MONOTONIC, {tv_sec=433617, tv_nsec=340959821}) = 0
+clock_gettime(CLOCK_MONOTONIC, {tv_sec=433617, tv_nsec=341028913}) = 0
+socketpair(AF_UNIX, SOCK_STREAM, 0, [5, 6]) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fbae4e8c000
+rt_sigprocmask(SIG_UNBLOCK, [RT_1 RT_2], NULL, 8) = 0
+membarrier(MEMBARRIER_CMD_REGISTER_PRIVATE_EXPEDITED, 0) = 0
+mmap(NULL, 143360, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fbae4e4d000
+mprotect(0x7fbae4e4f000, 135168, PROT_READ|PROT_WRITE) = 0
+rt_sigprocmask(SIG_BLOCK, ~[RTMIN RT_1 RT_2], [], 8) = 0
+clone(child_stack=0x7fbae4e6faf8, flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTID|0x400000, parent_tid=[103], tls=0x7fbae4e6fb38, child_tidptr=0x7fbae5336fb0) = 103
+rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+clock_gettime(CLOCK_MONOTONIC, {tv_sec=433617, tv_nsec=341697276}) = 0
+clock_gettime(CLOCK_MONOTONIC, {tv_sec=433617, tv_nsec=341735809}) = 0
+clock_gettime(CLOCK_MONOTONIC, {tv_sec=433617, tv_nsec=341774886}) = 0
+rt_sigaction(SIGPIPE, {sa_handler=SIG_IGN, sa_mask=[], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7fbae52e6c9f}, NULL, 8) = 0
+clock_gettime(CLOCK_MONOTONIC, {tv_sec=433617, tv_nsec=341898611}) = 0
+poll([{fd=5, events=POLLIN}, {fd=3, events=POLLIN}], 2, 1) = 0 (Timeout)
+clock_gettime(CLOCK_MONOTONIC, {tv_sec=433617, tv_nsec=343190877}) = 0
+rt_sigaction(SIGPIPE, NULL, {sa_handler=SIG_IGN, sa_mask=[], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7fbae52e6c9f}, 8) = 0
+rt_sigaction(SIGPIPE, {sa_handler=SIG_IGN, sa_mask=[], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7fbae52e6c9f}, NULL, 8) = 0
+munmap(0x7fbae4e4d000, 143360)          = 0
+close(6)                                = 0
+close(5)                                = 0
+munmap(0x7fbae4e8c000, 4096)            = 0
+clock_gettime(CLOCK_MONOTONIC, {tv_sec=433617, tv_nsec=343803433}) = 0
+clock_gettime(CLOCK_MONOTONIC, {tv_sec=433617, tv_nsec=343849636}) = 0
+rt_sigaction(SIGPIPE, {sa_handler=SIG_IGN, sa_mask=[], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7fbae52e6c9f}, NULL, 8) = 0
+rt_sigaction(SIGPIPE, {sa_handler=SIG_IGN, sa_mask=[], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7fbae52e6c9f}, NULL, 8) = 0
+writev(2, [{iov_base="", iov_len=0}, {iov_base="c", iov_len=1}], 2) = 1
+writev(2, [{iov_base="", iov_len=0}, {iov_base="u", iov_len=1}], 2) = 1
+writev(2, [{iov_base="", iov_len=0}, {iov_base="r", iov_len=1}], 2) = 1
+writev(2, [{iov_base="", iov_len=0}, {iov_base="l", iov_len=1}], 2) = 1
+writev(2, [{iov_base="", iov_len=0}, {iov_base=":", iov_len=1}], 2) = 1
+writev(2, [{iov_base="", iov_len=0}, {iov_base=" ", iov_len=1}], 2) = 1
+writev(2, [{iov_base="", iov_len=0}, {iov_base="(", iov_len=1}], 2) = 1
+writev(2, [{iov_base="", iov_len=0}, {iov_base="6", iov_len=1}], 2) = 1
+writev(2, [{iov_base="", iov_len=0}, {iov_base=")", iov_len=1}], 2) = 1
+writev(2, [{iov_base="", iov_len=0}, {iov_base=" ", iov_len=1}], 2) = 1
+writev(2, [{iov_base="", iov_len=0}, {iov_base="C", iov_len=1}], 2) = 1
+writev(2, [{iov_base="", iov_len=0}, {iov_base="o", iov_len=1}], 2) = 1
+writev(2, [{iov_base="", iov_len=0}, {iov_base="u", iov_len=1}], 2) = 1
+writev(2, [{iov_base="", iov_len=0}, {iov_base="l", iov_len=1}], 2) = 1
+writev(2, [{iov_base="", iov_len=0}, {iov_base="d", iov_len=1}], 2) = 1
+writev(2, [{iov_base="", iov_len=0}, {iov_base=" ", iov_len=1}], 2) = 1
+writev(2, [{iov_base="", iov_len=0}, {iov_base="n", iov_len=1}], 2) = 1
+writev(2, [{iov_base="", iov_len=0}, {iov_base="o", iov_len=1}], 2) = 1
+writev(2, [{iov_base="", iov_len=0}, {iov_base="t", iov_len=1}], 2) = 1
+writev(2, [{iov_base="", iov_len=0}, {iov_base=" ", iov_len=1}], 2) = 1
+writev(2, [{iov_base="", iov_len=0}, {iov_base="r", iov_len=1}], 2) = 1
+writev(2, [{iov_base="", iov_len=0}, {iov_base="e", iov_len=1}], 2) = 1
+writev(2, [{iov_base="", iov_len=0}, {iov_base="s", iov_len=1}], 2) = 1
+writev(2, [{iov_base="", iov_len=0}, {iov_base="o", iov_len=1}], 2) = 1
+writev(2, [{iov_base="", iov_len=0}, {iov_base="l", iov_len=1}], 2) = 1
+writev(2, [{iov_base="", iov_len=0}, {iov_base="v", iov_len=1}], 2) = 1
+writev(2, [{iov_base="", iov_len=0}, {iov_base="e", iov_len=1}], 2) = 1
+writev(2, [{iov_base="", iov_len=0}, {iov_base=" ", iov_len=1}], 2) = 1
+writev(2, [{iov_base="", iov_len=0}, {iov_base="h", iov_len=1}], 2) = 1
+writev(2, [{iov_base="", iov_len=0}, {iov_base="o", iov_len=1}], 2) = 1
+writev(2, [{iov_base="", iov_len=0}, {iov_base="s", iov_len=1}], 2) = 1
+writev(2, [{iov_base="", iov_len=0}, {iov_base="t", iov_len=1}], 2) = 1
+writev(2, [{iov_base="", iov_len=0}, {iov_base=":", iov_len=1}], 2) = 1
+writev(2, [{iov_base="", iov_len=0}, {iov_base=" ", iov_len=1}], 2) = 1
+writev(2, [{iov_base="", iov_len=0}, {iov_base="b", iov_len=1}], 2) = 1
+writev(2, [{iov_base="", iov_len=0}, {iov_base="a", iov_len=1}], 2) = 1
+writev(2, [{iov_base="", iov_len=0}, {iov_base="c", iov_len=1}], 2) = 1
+writev(2, [{iov_base="", iov_len=0}, {iov_base="k", iov_len=1}], 2) = 1
+writev(2, [{iov_base="", iov_len=0}, {iov_base="e", iov_len=1}], 2) = 1
+writev(2, [{iov_base="", iov_len=0}, {iov_base="n", iov_len=1}], 2) = 1
+writev(2, [{iov_base="", iov_len=0}, {iov_base="d", iov_len=1}], 2) = 1
+writev(2, [{iov_base="", iov_len=0}, {iov_base=".", iov_len=1}], 2) = 1
+writev(2, [{iov_base="", iov_len=0}, {iov_base="v", iov_len=1}], 2) = 1
+writev(2, [{iov_base="", iov_len=0}, {iov_base="i", iov_len=1}], 2) = 1
+writev(2, [{iov_base="", iov_len=0}, {iov_base="r", iov_len=1}], 2) = 1
+writev(2, [{iov_base="", iov_len=0}, {iov_base="t", iov_len=1}], 2) = 1
+writev(2, [{iov_base="", iov_len=0}, {iov_base="u", iov_len=1}], 2) = 1
+writev(2, [{iov_base="", iov_len=0}, {iov_base="a", iov_len=1}], 2) = 1
+writev(2, [{iov_base="", iov_len=0}, {iov_base="l", iov_len=1}], 2) = 1
+writev(2, [{iov_base="", iov_len=0}, {iov_base=".", iov_len=1}], 2) = 1
+writev(2, [{iov_base="", iov_len=0}, {iov_base="d", iov_len=1}], 2) = 1
+writev(2, [{iov_base="", iov_len=0}, {iov_base="e", iov_len=1}], 2) = 1
+writev(2, [{iov_base="", iov_len=0}, {iov_base="f", iov_len=1}], 2) = 1
+writev(2, [{iov_base="", iov_len=0}, {iov_base="a", iov_len=1}], 2) = 1
+writev(2, [{iov_base="", iov_len=0}, {iov_base="u", iov_len=1}], 2) = 1
+writev(2, [{iov_base="", iov_len=0}, {iov_base="l", iov_len=1}], 2) = 1
+writev(2, [{iov_base="", iov_len=0}, {iov_base="t", iov_len=1}], 2) = 1
+writev(2, [{iov_base="", iov_len=0}, {iov_base=".", iov_len=1}], 2) = 1
+writev(2, [{iov_base="", iov_len=0}, {iov_base="n", iov_len=1}], 2) = 1
+writev(2, [{iov_base="", iov_len=0}, {iov_base="s", iov_len=1}], 2) = 1
+writev(2, [{iov_base="", iov_len=0}, {iov_base=".", iov_len=1}], 2) = 1
+writev(2, [{iov_base="", iov_len=0}, {iov_base="e", iov_len=1}], 2) = 1
+writev(2, [{iov_base="", iov_len=0}, {iov_base="k", iov_len=1}], 2) = 1
+writev(2, [{iov_base="", iov_len=0}, {iov_base="s", iov_len=1}], 2) = 1
+writev(2, [{iov_base="", iov_len=0}, {iov_base="p", iov_len=1}], 2) = 1
+writev(2, [{iov_base="", iov_len=0}, {iov_base="a", iov_len=1}], 2) = 1
+writev(2, [{iov_base="", iov_len=0}, {iov_base="r", iov_len=1}], 2) = 1
+writev(2, [{iov_base="", iov_len=0}, {iov_base="t", iov_len=1}], 2) = 1
+writev(2, [{iov_base="", iov_len=0}, {iov_base="2", iov_len=1}], 2) = 1
+writev(2, [{iov_base="", iov_len=0}, {iov_base=".", iov_len=1}], 2) = 1
+writev(2, [{iov_base="", iov_len=0}, {iov_base="a", iov_len=1}], 2) = 1
+writev(2, [{iov_base="", iov_len=0}, {iov_base="p", iov_len=1}], 2) = 1
+writev(2, [{iov_base="", iov_len=0}, {iov_base=".", iov_len=1}], 2) = 1
+writev(2, [{iov_base="", iov_len=0}, {iov_base="a", iov_len=1}], 2) = 1
+writev(2, [{iov_base="", iov_len=0}, {iov_base="p", iov_len=1}], 2) = 1
+writev(2, [{iov_base="", iov_len=0}, {iov_base="i", iov_len=1}], 2) = 1
+writev(2, [{iov_base="", iov_len=0}, {iov_base=".", iov_len=1}], 2) = 1
+writev(2, [{iov_base="", iov_len=0}, {iov_base="p", iov_len=1}], 2) = 1
+writev(2, [{iov_base="", iov_len=0}, {iov_base="e", iov_len=1}], 2) = 1
+writev(2, [{iov_base="", iov_len=0}, {iov_base="e", iov_len=1}], 2) = 1
+writev(2, [{iov_base="", iov_len=0}, {iov_base="r", iov_len=1}], 2) = 1
+writev(2, [{iov_base="", iov_len=0}, {iov_base=".", iov_len=1}], 2) = 1
+writev(2, [{iov_base="", iov_len=0}, {iov_base="c", iov_len=1}], 2) = 1
+writev(2, [{iov_base="", iov_len=0}, {iov_base="o", iov_len=1}], 2) = 1
+writev(2, [{iov_base="", iov_len=0}, {iov_base="n", iov_len=1}], 2) = 1
+writev(2, [{iov_base="", iov_len=0}, {iov_base="s", iov_len=1}], 2) = 1
+writev(2, [{iov_base="", iov_len=0}, {iov_base="u", iov_len=1}], 2) = 1
+writev(2, [{iov_base="", iov_len=0}, {iov_base="l", iov_len=1}], 2) = 1
+writev(2, [{iov_base="", iov_len=0}, {iov_base="\n", iov_len=1}], 2) = 1
+rt_sigaction(SIGPIPE, NULL, {sa_handler=SIG_IGN, sa_mask=[], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7fbae52e6c9f}, 8) = 0
+rt_sigaction(SIGPIPE, {sa_handler=SIG_IGN, sa_mask=[], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7fbae52e6c9f}, NULL, 8) = 0
+rt_sigaction(SIGPIPE, NULL, {sa_handler=SIG_IGN, sa_mask=[], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7fbae52e6c9f}, 8) = 0
+rt_sigaction(SIGPIPE, {sa_handler=SIG_IGN, sa_mask=[], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7fbae52e6c9f}, NULL, 8) = 0
+munmap(0x7fbae4e8e000, 8192)            = 0
+rt_sigaction(SIGPIPE, {sa_handler=SIG_IGN, sa_mask=[], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7fbae52e6c9f}, NULL, 8) = 0
+close(3)                                = 0
+close(4)                                = 0
+munmap(0x7fbae4e9b000, 4096)            = 0
+munmap(0x7fbae4e70000, 106496)          = 0
+munmap(0x7fbae4e8a000, 8192)            = 0
+rt_sigaction(SIGPIPE, {sa_handler=SIG_IGN, sa_mask=[], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7fbae52e6c9f}, NULL, 8) = 0
+mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fbae4e8e000
+rt_sigaction(SIGPIPE, NULL, {sa_handler=SIG_IGN, sa_mask=[], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7fbae52e6c9f}, 8) = 0
+rt_sigaction(SIGPIPE, {sa_handler=SIG_IGN, sa_mask=[], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7fbae52e6c9f}, NULL, 8) = 0
+munmap(0x7fbae4e8e000, 8192)            = 0
+rt_sigaction(SIGPIPE, {sa_handler=SIG_IGN, sa_mask=[], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7fbae52e6c9f}, NULL, 8) = 0
+mmap(NULL, 16384, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fbae4e89000
+munmap(0x7fbae4e89000, 16384)           = 0
+munmap(0x7fbae4eac000, 4096)            = 0
+rt_sigaction(SIGPIPE, NULL, {sa_handler=SIG_IGN, sa_mask=[], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7fbae52e6c9f}, 8) = 0
+rt_sigaction(SIGPIPE, {sa_handler=SIG_IGN, sa_mask=[], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7fbae52e6c9f}, NULL, 8) = 0
+munmap(0x7fbae4e90000, 8192)            = 0
+rt_sigaction(SIGPIPE, {sa_handler=SIG_IGN, sa_mask=[], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7fbae52e6c9f}, NULL, 8) = 0
+munmap(0x7fbae4e8d000, 4096)            = 0
+munmap(0x7fbae4e9c000, 8192)            = 0
+rt_sigprocmask(SIG_BLOCK, ~[RTMIN RT_1 RT_2], [], 8) = 0
+rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+munmap(0x7fbae4eb1000, 4096)            = 0
+rt_sigprocmask(SIG_BLOCK, ~[RTMIN RT_1 RT_2], [], 8) = 0
+rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+munmap(0x7fbae4eaf000, 4096)            = 0
+munmap(0x7fbae4eaa000, 4096)            = 0
+munmap(0x7fbae4eb0000, 4096)            = 0
+munmap(0x7fbae4ead000, 4096)            = 0
+munmap(0x7fbae4ea4000, 8192)            = 0
+munmap(0x7fbae4e9e000, 16384)           = 0
+munmap(0x7fbae4eab000, 4096)            = 0
+munmap(0x7fbae4eae000, 4096)            = 0
+munmap(0x7fbae4ea6000, 8192)            = 0
+munmap(0x7fbae4e97000, 16384)           = 0
+munmap(0x7fbae4ea2000, 8192)            = 0
+munmap(0x7fbae4ea8000, 8192)            = 0
+munmap(0x7fbae4e92000, 20480)           = 0
+exit_group(6)                           = ?
++++ exited with 6 +++

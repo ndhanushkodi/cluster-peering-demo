@@ -1,0 +1,13 @@
+apiVersion: v1
+data:
+  tls.key: LS0tLS1CRUdJTiBFQyBQUklWQVRFIEtFWS0tLS0tCk1IY0NBUUVFSUdTZUIxa3BnYSs3YzRGeWFsdVViM1RvNGNnRjBZZHp1c0pKSDlMRGZ3a0VvQW9HQ0NxR1NNNDkKQXdFSG9VUURRZ0FFRmV1Rkk4Qjk2S1JkMlZXL1hZK21lTS9ydE1wUzJacVlFV0J0RHFhcmc4R0RwU0gwRFdZMgpzT3hWeHJDZVp4TlZISVJVOXVHOVNWQVRUaDZDTzBZY3J3PT0KLS0tLS1FTkQgRUMgUFJJVkFURSBLRVktLS0tLQo=
+kind: Secret
+metadata:
+  creationTimestamp: "2022-11-17T06:41:57Z"
+  labels:
+    managed-by: consul-k8s
+  name: gke2svr-consul-ca-key
+  namespace: default
+  resourceVersion: "10250022"
+  uid: 9c50cc91-29ca-4e74-96a0-2dd91ba2a706
+type: Opaque

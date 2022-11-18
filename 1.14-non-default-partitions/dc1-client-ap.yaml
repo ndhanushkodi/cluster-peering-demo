@@ -1,0 +1,60 @@
+global:
+  logLevel: debug
+  enabled: false
+  domain: consul
+  datacenter: dc1
+  # imageK8S: ndhanushkodi/consul-k8s-dev:latestnov9
+  # image: hashicorppreview/consul-enterprise:1.14-dev
+  imageK8S: ndhanushkodi/consul-k8s-dev:aclfix3
+  image: hashicorppreview/consul-enterprise:1.14-dev
+  enterpriseLicense:
+    secretName: license
+    secretKey: key
+  peering:
+    enabled: true
+  adminPartitions:
+    enabled: true
+    name: ekspart2
+  enableConsulNamespaces: true
+  acls:
+    manageSystemACLs: true
+    bootstrapToken:
+      secretName: eks1svr-consul-partitions-acl-token
+      secretKey: token
+  tls:
+    enabled: true
+    caCert:
+      secretName: eks1svr-consul-ca-cert
+      secretKey: "tls.crt"
+    caKey:
+      secretName: eks1svr-consul-ca-key
+      secretKey: "tls.key"
+dns:
+  enabled: true
+  enableRedirection: true
+server:
+  enabled: false
+  # service:
+  #   type: LoadBalancer
+externalServers:
+  enabled: true
+  hosts: ["a6656d76f2a0e4e3cb8e1e60d70b3e8b-1377955253.us-west-2.elb.amazonaws.com"]
+  tlsServerName: "server.dc1.consul"
+  k8sAuthMethodHost: https://D4B2CCECE6D05DF49174CBBF1E7127A4.yl4.us-west-2.eks.amazonaws.com
+
+
+ui:
+  enabled: true
+
+connectInject:
+  enabled: true
+
+controller:
+  enabled: true
+
+meshGateway:
+  enabled: true
+  replicas: 1
+  # service:
+  #   type: NodePort
+  #   nodePort: 30100

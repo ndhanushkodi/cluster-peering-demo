@@ -1,0 +1,60 @@
+global:
+  logLevel: debug
+  enabled: false
+  domain: consul
+  datacenter: dc2
+  # imageK8S: ndhanushkodi/consul-k8s-dev:latestnov9
+  # image: hashicorppreview/consul-enterprise:1.14-dev
+  # imageK8S: hashicorpdev/consul-k8s-control-plane:4e72651d
+  imageK8S: ndhanushkodi/consul-k8s-dev:aclfix3
+  image: hashicorppreview/consul-enterprise:1.14-dev
+  enterpriseLicense:
+    secretName: license
+    secretKey: key
+  peering:
+    enabled: true
+  adminPartitions:
+    enabled: true
+    name: gkepart2
+  enableConsulNamespaces: true
+  acls:
+    manageSystemACLs: true
+    bootstrapToken:
+      secretName: gke2svr-consul-partitions-acl-token
+      secretKey: token
+  tls:
+    enabled: true
+    caCert:
+      secretName: gke2svr-consul-ca-cert
+      secretKey: "tls.crt"
+    caKey:
+      secretName: gke2svr-consul-ca-key
+      secretKey: "tls.key"
+dns:
+  enabled: true
+  enableRedirection: true
+server:
+  enabled: false
+
+externalServers:
+  enabled: true
+  hosts: ["34.28.135.88"]
+  tlsServerName: "server.dc2.consul"
+  k8sAuthMethodHost: https://35.223.19.79
+
+
+ui:
+  enabled: true
+
+connectInject:
+  enabled: true
+
+controller:
+  enabled: true
+
+meshGateway:
+  enabled: true
+  replicas: 1
+  # service:
+  #   type: NodePort
+  #   nodePort: 30100

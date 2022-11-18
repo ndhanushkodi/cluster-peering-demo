@@ -1,0 +1,48 @@
+global:
+  domain: consul
+  datacenter: dc2
+  # image: hashicorppreview/consul-enterprise:1.14-dev
+  # imageK8S: hashicorpdev/consul-k8s-control-plane:4e72651d
+  imageK8S: ndhanushkodi/consul-k8s-dev:aclfix3
+  image: hashicorppreview/consul-enterprise:1.14-dev
+  enterpriseLicense:
+    secretName: license
+    secretKey: key
+  peering:
+    enabled: true
+  adminPartitions:
+    enabled: true
+  enableConsulNamespaces: true
+  tls:
+    enabled: true
+  acls:
+    manageSystemACLs: true
+  logLevel: debug
+server:
+  # service:
+  #   type: LoadBalancer
+  # exposeService:
+  #   enabled: true
+  # exposeGossipAndRPCPorts: true
+  replicas: 3
+  bootstrapExpect: 3
+  extraConfig: |
+    {
+      "log_level": "TRACE"
+    }
+
+ui:
+  enabled: true
+
+connectInject:
+  enabled: true
+
+controller:
+  enabled: true
+
+meshGateway:
+  enabled: true
+  replicas: 1
+  # service:
+  #   type: NodePort
+  #   nodePort: 30100
