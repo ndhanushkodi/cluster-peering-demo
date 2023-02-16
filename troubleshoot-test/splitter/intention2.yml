@@ -1,0 +1,12 @@
+---
+apiVersion: consul.hashicorp.com/v1alpha1
+kind: ServiceIntentions
+metadata:
+  name: backend2-deny
+spec:
+  destination:
+    name: backend2
+  sources:
+    - name: frontend
+      action: allow
+
